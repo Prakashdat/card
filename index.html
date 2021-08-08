@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./cards.css">
+
+</head>
+
+<body>
+  <!-- your content here... -->
+  <div id="cardContainer" class="container hidden-xs hidden-sm hidden-md">
+      <div class="col-lg-8">
+      </div>
+      <div class="col-lg-4"> 
+          <br>
+        <button class="btn" onclick="jumble()">Shffule</button><br><br><br>
+        <button class=" btn"onclick="sortCards()">Sort</button>
+      </div>
+    <p><i style="color:black">Shuffle and Sort By Prakash</i></p>
+  </div>
+  
+  <div id="mobileContainer" class="hidden-lg visible-xs-*">
+        <div class="bg">
+            <span> 
+             Shffule and Sort
+            </span>
+        </div>
+        <div class="col-xs-12"> 
+            <br>
+            <button class="btn" onclick="jumble()">Shffule</button>
+            <button class="btn"onclick="sortCards()">Sort</button>
+        </div>
+         <div class="stripCard"></div>  
+         <p class="col-xs-12"><i style="color:black">Shuffle and Sort By Prakash</i></p>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script src="./cardsLay.js"></script>
+</body>
+</html>
